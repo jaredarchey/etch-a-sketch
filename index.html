@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type='text/css' rel='stylesheet' href='style.css' />
+		<script src='jquery-ui-1.11.4/external/jquery/jquery.js'></script>
+		<script src='jquery-ui-1.11.4/jquery-ui.js'></script>
+		<script type='text/javascript' src='main.js'></script>
+		<script type='text/javascript' src='events.js'></script>
+	</head>
+
+	<body onload='start()')>
+		<div id='header'>
+			<h1>Etch-a-Sketch</h1>
+			<p>Created by <a href="https://github.com/">Jared Archey</a></p>
+		</div>
+		<div id='controls'>
+			<h3>Grid Reaction</h3>
+			<div id='reactionType'>
+				<input type='radio' name='react' value='highlight' checked>Highlight</input>
+				<input type='radio' name='react' value='holdColor'>Color</input>
+				<input type='radio' name='react' value='trail'>Trail</input><br><br>
+				<input type='checkbox' name='react' value='randomColor'>Random Colors</input>
+			</div>
+			<h3>Border</h3>
+			<div id='border'>
+				<input type='checkbox' value='true' id='borderToggle' checked >Toggle Border</input><br>
+				<p>Width:</p>
+				<input type='text' value='1' id='borderWidth'></input>
+				<p>Color:</p>
+				<input type='text' value='black' id='borderColor'></input><br>
+				<button id='updateBorder'>Adjust</button>
+			</div>
+			<h3>Size</h3>
+			<div id='size'>
+				<p>Rows:</p>
+				<input type='text' id='gridHeight' value='16'></input>
+				<p>Cols:</p>
+				<input type='text' id='gridWidth' value='16'></input><br>
+				<button id='updateSize'>Adjust</button>
+			</div>
+			<h3>Etc.</h3>
+			<div id='etc'>
+				<p>Highlight Color:</p>
+				<input type='text' id='hoverColor' value='white'></input><br>
+				<p>Grid Color:</p>
+				<input type='text' id='gridColor' value='blue'></input><br>
+				<p>Fade Rate:</p>
+				<input type='text' id='fadeOut' value='1000'></input><br>
+				<button id='updateEtc'>Adjust</button>
+			</div>
+		</div>
+		<div id='container'></div>
+	</body>
+</html>
